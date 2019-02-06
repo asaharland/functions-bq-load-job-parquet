@@ -24,7 +24,7 @@ exports.loadFile = (event, callback) => {
   const tableId = 'transactions';
 
   const jobMetadata = {
-    skipLeadingRows: 1,
+    format: 'PARQUET',
     writeDisposition: 'WRITE_APPEND'
   };
 
