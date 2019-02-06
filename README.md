@@ -27,7 +27,7 @@ Functions for your project.
 
 1. Create a BigQuery dataset with a table with the following schema:
 
-        user_id:STRING,amount:FLOAT
+        user_id:INTEGER,amount:FLOAT
 
 1. Upload 'sample.csv', located in the root of this repo, to your bucket:
 

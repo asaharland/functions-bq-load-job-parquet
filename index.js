@@ -20,6 +20,12 @@ const bigquery = new BigQuery();
 exports.loadFile = (event, callback) => {
   const file = event.data;
 
+  if (!file.name.endsWith('.parquet')) {
+    console.log('file is not parquet, exit');
+    callback();
+    return;
+  }
+
   const datasetId = 'finance';
   const tableId = 'transactions';
 
